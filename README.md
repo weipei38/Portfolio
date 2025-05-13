@@ -1,15 +1,24 @@
-# Hello, I'm Wei Huang
+# Wei Huang – IT Operations Veteran Breaking into Cybersecurity  
 <a href="https://www.linkedin.com/in/weihuang-cloudsecurity/"><img src="https://img.shields.io/badge/-LinkedIn-0072b1?&style=for-the-badge&logo=linkedin&logoColor=white" /></a>
 
-[Brief Introduction - Remove this afterwards]
+Welcome to my GitHub portfolio!  
 
-I am a recent graduate with a profound interest in technology and a dedication to solving complex problems.
+After years of **optimizing IT infrastructure, managing incidents, and ensuring seamless operations**, I’m embarking on an exciting journey into the world of **cybersecurity**. My experience in **ITIL, network management, and system reliability** has equipped me with the analytical mindset and problem-solving skills essential for **threat detection, risk mitigation, and security engineering**.  
 
-## Objective
-[Provide Objective - Remove this afterwards]]
+## 🔄 From IT Ops to Cybersecurity  
+Having spent years **monitoring networks, troubleshooting critical issues, and ensuring service continuity**, I’ve seen firsthand the increasing importance of cybersecurity in **protecting assets, securing cloud environments, and defending against evolving threats**. Now, I’m applying my IT operations expertise to **vulnerability management, security automation, and incident response**.  
 
-My journey in computer science has led me to develop a passion for cybersecurity, and I am now eager to transition into this field, specifically aiming to join a Security Operations Center (SOC) as a Tier 1 Analyst.
+## ⚡ Learning, Building & Contributing  
+This portfolio showcases my journey—**security projects, automation scripts, and contributions to open-source cybersecurity tools**. I’m eager to collaborate, learn from industry leaders, and refine my skills in **cloud security, ethical hacking, and security architecture**.  
 
+📧 **Let’s connect:** [whuang2@live.com](mailto:whuang2@live.com)  
+
+
+## 🎯 Objective  
+
+As a seasoned IT Operations professional transitioning into cybersecurity, I aim to leverage my expertise in **incident management, network reliability, and ITIL best practices** to build **robust security solutions**. My goal is to contribute to **threat detection, vulnerability management, and cloud security**, ensuring organizations stay ahead of evolving cyber threats.  
+
+I am eager to collaborate, learn from industry experts, and apply **security automation, ethical hacking, and risk mitigation strategies** to protect critical systems and data.  
 ## Skills
 [Provide skills and associated project. Make sure to hyperlink the project - Remove this afterwards]]
 
