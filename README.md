@@ -46,9 +46,7 @@ My journey in computer science has led me to develop a passion for cybersecurity
 </div>
 
 ## Certifications
-[Provide certifications that you have obtained. Use ChatGPT to help create the link - Remove this afterwards]]
-<div>
-[![CCNA Certification](https://raw.githubusercontent.com/weipei38/Portfolio/main/ccna_sm.jpg)](https://cp.certmetrics.com/cisco/en/public/verify/credential/d529883831ae4da7bc5b2a6ea7ca5bea)
+<a href="https://cp.certmetrics.com/cisco/en/public/verify/credential/d529883831ae4da7bc5b2a6ea7ca5bea"><img src="https://img.shields.io/badge/-LinkedIn-0072b1?&style=for-the-badge&logo=Cisco&logoColor=white" /></a>
 
 
 
