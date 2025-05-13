@@ -46,7 +46,7 @@ My journey in computer science has led me to develop a passion for cybersecurity
 </div>
 
 ## Certifications
-<a href="https://cp.certmetrics.com/cisco/en/public/verify/credential/d529883831ae4da7bc5b2a6ea7ca5bea"><img src="https://img.shields.io/badge/-LinkedIn-0072b1?&style=for-the-badge&logo=Cisco&logoColor=white" /></a>
+<a href="https://cp.certmetrics.com/cisco/en/public/verify/credential/d529883831ae4da7bc5b2a6ea7ca5bea"><img src="https://img.shields.io/badge/-CCNA-0072b1?&style=for-the-badge&logo=Cisco&logoColor=white" /></a>
 
 
 
