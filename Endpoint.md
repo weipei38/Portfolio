@@ -60,4 +60,5 @@ Throughout this training, I completed four labs focused on **rapid forensic arti
 
 ---
 
-This markdown version is ready for **your GitHub portfolio**! 🚀 Would you like me to add any links to relevant repositories or references?  
+<!--This markdown version is ready for **your GitHub portfolio**! 🚀 Would you like me to add any links to relevant repositories or references?  
+-->
