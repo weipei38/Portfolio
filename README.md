@@ -24,8 +24,8 @@ I am eager to collaborate, learn from industry experts, and apply **security aut
 
 | Skill                                         | Associated Project         |
 |-----------------------------------------------|----------------------------|
-| SIEM Implementation and Log Analysis          | <a href="https://google.com">Detection Lab</a>|
-| Network Traffic Monitoring and Attack Detection | <a href="https://google.com">Detection Lab</a>|
+<!--| SIEM Implementation and Log Analysis          | <a href="https://google.com">Detection Lab</a>|
+| Network Traffic Monitoring and Attack Detection | <a href="https://google.com">Detection Lab</a>|-->
 | Rapid Endpoint Analysis                       | [Endpoint Investigation](Endpoint.md)
 
 
