@@ -20,19 +20,20 @@ As a seasoned IT Operations professional transitioning into cybersecurity, I aim
 
 I am eager to collaborate, learn from industry experts, and apply **security automation, ethical hacking, and risk mitigation strategies** to protect critical systems and data.  
 ## Skills
-[Provide skills and associated project. Make sure to hyperlink the project - Remove this afterwards]]
+<!--[Provide skills and associated project. Make sure to hyperlink the project - Remove this afterwards]]-->
 
 | Skill                                         | Associated Project         |
 |-----------------------------------------------|----------------------------|
 | SIEM Implementation and Log Analysis          | <a href="https://google.com">Detection Lab</a>|
 | Network Traffic Monitoring and Attack Detection | <a href="https://google.com">Detection Lab</a>|
+| Rapid Endpoint Analysis                       | 
 | Security Automation with Shuffle SOAR         | SOC Automation Lab|
 | Incident Response Planning and Execution      | SOC Automation Lab|
 | Case Management with TheHive                  | SOC Automation Lab|
 | Scripting and Automation for Threat Mitigation | SOC Automation Lab|
 
 ## Tools
-[Provide tools and break them down into categories. Use ChatGPT to help create the link - Remove this afterwards]]
+<!--[Provide tools and break them down into categories. Use ChatGPT to help create the link - Remove this afterwards]]-->
 
 ### Network
 <div>
