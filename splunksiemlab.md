@@ -175,11 +175,48 @@ Detected creation of `micar.txt` in `/home/administrator/Downloads` via `auditd`
 
 Suricata flagged related outbound traffic shortly after the file drop, suggesting staging behavior.
 
+## 🔥 Day 6: Palo Alto Firewall Log Analysis
+
+**Objective:** Detect policy violations, threat signatures, and outbound anomalies using Palo Alto firewall logs in Splunk.
+
+**Reference:** [Manual: Palo Alto Firewall Log Analysis](https://www.notion.so/Manual-Palo-Alto-Firewall-Log-Analysis-255829fa6c4d8064b08ff657a8463cde)
+
+### ✅ Tasks Completed
+- Ingested Palo Alto logs into Splunk (`sourcetype="pan:traffic"` and `pan:threat`)
+- Parsed key fields: `src`, `dest`, `app`, `action`, `rule`, `threatid`, `category`
+- Filtered for denied traffic, threat alerts, and rare outbound flows
+- Mapped threat categories to MITRE ATT&CK tactics (e.g., Command and Control, Exfiltration)
+
+### 📊 Dashboard Progress
+- Panels created for:
+  - Top denied applications and destination IPs
+  - Threat signatures by severity and category
+  - Traffic breakdown by rule, zone, and application
+- Added dynamic filters for `action`, `app`, `threatid`, and `category`
+
+### 📸 Screenshot
+_No screenshot available for Day 6._
+
+### 🧠 Observations
+- Palo Alto logs offer deep visibility into both policy enforcement and threat detection
+- Denied outbound traffic to rare IPs often signals staging or exfiltration attempts
+- Threat signatures like `Suspicious TLS Beacon` and `Known C2 Traffic` are high-value indicators
+
+### 🧪 Artifact Highlight: Threat Signature Detection
+
+Detected outbound traffic flagged by Palo Alto as known C2 activity:
+
+- **Event Time:** 08/24/2025 02:12:44 AM  
+- **Source IP:** `192.168.56.101`  
+- **Destination IP:** `185.62.189.11`  
+- **Application:** `ssl`  
+- **Action:** `alert`  
+- **Threat ID:** `Suspicious TLS Beacon`  
+- **Sourcetype:** `pan:threat`
+
+This alert correlates with Suricata flow data from Day 5 and confirms multi-layer detection of the same outbound beacon.
+
 ---
 
 
----
-
-
----
 
