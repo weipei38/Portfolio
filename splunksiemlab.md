@@ -135,6 +135,49 @@ Detected creation of `micar.txt` in `/home/administrator/Downloads` via `auditd`
 
 This event correlates with earlier brute force attempts and post-exploitation behavior observed in Day 2 and Day 3.
 
+## 🧾 Day 4: File Integrity Monitoring for Sensitive Directories
+
+**Objective:** Detect unauthorized file modifications in sensitive Linux directories using `auditd` and Suricata logs in Splunk.
+
+**Reference:** [Manual: File Integrity Monitoring for Sensitive Directories](https://www.notion.so/Manual-File-Integrity-Monitoring-for-Sensitive-Directories-255829fa6c4d8024a1dffd5ffbb5e720)
+
+### ✅ Tasks Completed
+- Enabled `auditd` rules to monitor file creation, deletion, and permission changes in `/etc`, `/var/log`, and `/home`
+- Verified log ingestion into Splunk under `sourcetype="file_integrity"`
+- Correlated file creation events with Suricata alerts for post-exploitation behavior
+- Flagged unauthorized changes to config files and dropped artifacts in monitored paths
+
+### 📊 Dashboard Progress
+- Panels created for:
+  - File access events by path and syscall
+  - Top modified files by user and host
+  - Suricata alerts tied to file drops and suspicious flows
+- Applied filters for `syscall=creat`, `chmod`, `unlink`, and `event_type=alert`
+
+### 📸 Screenshot
+![Day 4 - Suricata File Integrity](https://github.com/weipei38/Portfolio/blob/main/Screenshot%202025-08-24%20143942.png?raw=true)
+
+### 🧠 Observations
+- `auditd` provides granular visibility into file-level operations
+- Suricata alerts help validate whether file drops are benign or part of a larger compromise
+- Monitoring `/etc`, `/var/log`, and `/home` is critical for early detection
+
+### 🧪 Artifact Highlight: Suspicious File Creation
+
+Detected creation of `micar.txt` in `/home/administrator/Downloads` via `auditd`:
+
+- **Event Time:** 08/19/2025 12:02:56 AM  
+- **Syscall:** `creat`  
+- **Target File:** `/home/administrator/Downloads/micar.txt`  
+- **User:** `administrator`  
+- **Sourcetype:** `file_integrity`  
+- **Event Type:** File created
+
+Suricata flagged related outbound traffic shortly after the file drop, suggesting staging behavior.
+
+---
+
+
 ---
 
 
