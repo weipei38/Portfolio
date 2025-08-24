@@ -22,12 +22,15 @@ I am eager to collaborate, learn from industry experts, and apply **security aut
 ## Skills
 <!--[Provide skills and associated project. Make sure to hyperlink the project - Remove this afterwards]]-->
 
-| Skill                                         | Associated Project         |
-|-----------------------------------------------|----------------------------|
+
 <!--| SIEM Implementation and Log Analysis          | <a href="https://google.com">Detection Lab</a>|
 | Network Traffic Monitoring and Attack Detection | <a href="https://google.com">Detection Lab</a>|-->
-| Rapid Endpoint Analysis                       | [Endpoint Investigation](Endpoint.md)
 
+
+| Skill                                   | Associated Project                        |
+|----------------------------------------|-------------------------------------------|
+| Rapid Endpoint Analysis                | [Endpoint Investigation](Endpoint.md)     |
+| Splunk 7-Days SIEM Challenge           | [Splunk SIEM Investigation](splunksiemlab.md) |
 
 <!--
 | Security Automation with Shuffle SOAR         | SOC Automation Lab|
