@@ -48,7 +48,7 @@
 - Next step: enrich with Suricata alerts for lateral movement detection
 
 ### 📸 Screenshot
-![Sysmon Event Log showing suspicious file creation](https://github.com/weipei38/Portfolio/blob/main/Screenshot%202025-08-19%20075225.png?raw=true)
+![Sysmon Event Log showing suspicious file creation](https://github.com/weipei38/Portfolio/blob/main/Screenshot%202025-08-18%20165645.png?raw=true)
 
 ### 🧾 Artifact Highlight: Suspicious File Creation
 
@@ -62,6 +62,7 @@ The following Sysmon event shows `powershell.exe` creating a file named `micar.c
 - **Event Type:** `TaskCategory=File created (rule: FileCreate)`
 
 This event can be correlated with earlier 4625 login failures to build a timeline of compromise.
+
 
 ## ⚠️ Day 3: Investigating PowerShell Abuse on Windows Machines
 
