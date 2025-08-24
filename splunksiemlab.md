@@ -63,5 +63,33 @@ The following Sysmon event shows `powershell.exe` creating a file named `micar.c
 
 This event can be correlated with earlier 4625 login failures to build a timeline of compromise.
 
+## ⚠️ Day 3: Investigating PowerShell Abuse on Windows Machines
+
+**Objective:** Detect and analyze suspicious PowerShell activity on Windows endpoints using Splunk and Sysmon logs.
+
+**Reference:** [Manual: Investigating PowerShell Abuse on Windows Machines](https://www.notion.so/Manual-Investigating-PowerShell-Abuse-on-Windows-Machines-255829fa6c4d80b5bd52ef88f8a905fa)
+
+### ✅ Tasks Completed
+- Identified Sysmon Event ID 1 (Process Creation) and Event ID 4104 (PowerShell Script Block Logging)
+- Built Splunk queries to surface encoded commands, suspicious flags (`-nop`, `-w hidden`, `-enc`)
+- Mapped execution paths and parent-child process relationships
+- Flagged use of `Invoke-Expression`, `DownloadString`, and encoded payloads
+
+### 📊 Dashboard Progress
+- Panels created for:
+  - PowerShell command frequency by host
+  - Top suspicious command patterns
+  - Timeline of encoded script executions
+- Added filters for specific flags and script block hashes
+
+### 🧠 Observations
+- PowerShell abuse often blends into legitimate admin activity—context is key
+- Script block logging provides deep visibility into obfuscated payloads
+- Next step: correlate with Suricata alerts and lateral movement artifacts
+
+---
+
+
+
 ---
 
