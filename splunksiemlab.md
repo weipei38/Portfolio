@@ -216,6 +216,43 @@ Detected outbound traffic flagged by Palo Alto as known C2 activity:
 
 This alert correlates with Suricata flow data from Day 5 and confirms multi-layer detection of the same outbound beacon.
 
+## 📊 Day 7: Building Custom Splunk Dashboard
+
+**Objective:** Consolidate detection logic from previous days into a unified Splunk dashboard for operational clarity and threat visibility.
+
+**Reference:** [Manual: Building Custom Splunk Dashboard](https://www.notion.so/Manual-Building-Custom-Splunk-Dashboard-257829fa6c4d80d6b6e7c6c3317059db)
+
+### ✅ Tasks Completed
+- Created a multi-panel dashboard integrating:
+  - RDP brute force detection (Day 2–3)
+  - File integrity monitoring (Day 4)
+  - Network anomaly detection via Suricata (Day 5)
+  - Palo Alto threat and traffic logs (Day 6)
+- Applied shared tokens for time range, source IP, and event type
+- Tuned queries for performance and readability
+- Validated panel outputs using lab-generated attack traffic
+
+### 📸 Screenshot
+![Day 7 - Splunk Dashboard](https://github.com/weipei38/Portfolio/blob/main/Screenshot%202025-08-23%20163522.png?raw=true)
+
+### 🧠 Observations
+- Shared tokens streamline investigation across multiple data sources
+- Panel grouping by MITRE tactic (e.g., Initial Access, Execution, Exfiltration) improves analyst workflow
+- Dashboard layout supports both executive summary and deep-dive analysis
+
+### 🧪 Artifact Highlight: Unified Threat Timeline Panel
+
+This panel visualizes key events across multiple sources:
+
+- **Inputs:** `WinEventLog:Security`, `file_integrity`, `suricata`, `pan:threat`
+- **Fields Used:** `_time`, `src_ip`, `event_type`, `threatid`, `syscall`, `EventCode`
+- **Outcome:** Chronological view of brute force → file drop → outbound beacon → firewall alert
+
+This timeline helps validate detection logic and supports incident response narratives.
+
+---
+
+
 ---
 
 
