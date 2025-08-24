@@ -95,6 +95,47 @@ This panel surfaces the top 10 source IPs with repeated login failures, grouped 
 - **Search Logic:** `stats count by src_ip, user | where count > 10`
 - **Outcome:** Identified 3 IPs with >50 failed attempts in <5 minutes
 
+## 🧾 Day 4: File Integrity Monitoring with auditd
+
+**Objective:** Detect unauthorized file modifications in sensitive Linux directories using `auditd` logs ingested into Splunk.
+
+**Reference:** [Manual: File Integrity Monitoring for Sensitive Directories](https://www.notion.so/Manual-File-Integrity-Monitoring-for-Sensitive-Directories-255829fa6c4d8024a1dffd5ffbb5e720)
+
+### ✅ Tasks Completed
+- Enabled `auditd` rules to monitor file creation, deletion, and permission changes in `/etc`, `/var/log`, and `/home`
+- Verified log ingestion into Splunk under `sourcetype="file_integrity"`
+- Built Splunk queries to surface suspicious file access and modifications
+- Flagged unauthorized changes to config files and dropped artifacts in monitored paths
+
+### 📊 Dashboard Progress
+- Panels created for:
+  - File access events by path and syscall
+  - Top modified files by user and host
+  - Permission changes and deletions
+- Applied filters for `syscall=creat`, `chmod`, `unlink`, and `open`
+
+### 📸 Screenshot
+![Day 4 - File Integrity Monitoring](https://github.com/weipei38/Portfolio/blob/main/Screenshot%202025-08-21%20233304.png?raw=true)
+
+### 🧠 Observations
+- `auditd` provides granular visibility into file-level operations
+- Monitoring `/etc` and `/var/log` is critical for early compromise detection
+- File drops in `/tmp` and `/home` often signal staging or exfiltration prep
+
+### 🧪 Artifact Highlight: Suspicious File Creation
+
+Detected creation of `micar.txt` in `/home/administrator/Downloads` via `auditd`:
+
+- **Event Time:** 08/19/2025 12:02:56 AM  
+- **Syscall:** `creat`  
+- **Target File:** `/home/administrator/Downloads/micar.txt`  
+- **User:** `administrator`  
+- **Sourcetype:** `file_integrity`  
+- **Event Type:** File created
+
+This event correlates with earlier brute force attempts and post-exploitation behavior observed in Day 2 and Day 3.
+
+---
 
 
 ---
